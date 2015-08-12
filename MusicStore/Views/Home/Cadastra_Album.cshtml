@@ -2,44 +2,53 @@
 @{
     ViewBag.Title = "Cadastrar Álbum";
 }
-
+@section Scripts{
+    <script src="@Url.Content("~/Public/js/views/cadastrarAlbum.js")"></script>
+}
 @section Styles{
     <link href="@Url.Content("~/Public/css/views/Cadastra_Album.css")" rel="stylesheet" type="text/css" />
 }
 
-<ul class="nav nav-tabs col-sm-3" id="sideBar">
-    <li class="menu"><a class="glyphicon glyphicon-align-justify" href="~/Home"></a></li>
-    <li><a class="glyphicon glyphicon-plus" href="#"></a></li>
-    <li><a class="glyphicon glyphicon-cd" href="#"></a></li>
-    <li><a class="glyphicon glyphicon-music" href="#"></a></li>
-</ul>
+
+
 
 @using (Html.BeginForm())
 {
-    @Html.AntiForgeryToken()
-    <div class="form-horizontal formCad">
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            <div class="album">
-                <a href="#"><img src="~/Public/images/album/cadastro/greyson.jpg" alt="Capa do Álbum" id="capaAlbum" /></a><br />
-                <div class="info">
-                    <input type="text" placeholder="Título do Álbum" />
-                    <input type="text" placeholder="Artista" />
-                    <input type="text" placeholder="Ano de Gravação" />
-                    <input type="text" placeholder="Gravadora" />
-                    <input type="number" min="0" max="30" size="50" class="nrFaixasAlbum" placeholder="Número de Faixas" />
+
+    <ul class="nav nav-tabs col-sm-3" id="sideBar">
+        <li class="menu"><a class="glyphicon glyphicon-align-justify" href="~/Home"></a></li>
+        <li><a class="glyphicon glyphicon-plus" href="#cadAlbum"></a></li>
+        <li><a class="glyphicon glyphicon-cd" href="#cadFaixa"></a></li>
+        <li><a class="glyphicon glyphicon-music" href="#cadOFaixa"></a></li>
+    </ul>
+    @*<div id="cadAlbum"> <p>Conteudo 1</p></div>
+    <div id="cadFaixa"><p>Conteudo 2</p></div>
+    <div id="cadOFaixa"><p>Conteudo 3</p></div>*@
+
+        @Html.AntiForgeryToken()
+        <div class="form-horizontal formCad">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <div class="album">
+                    <a href="#"><img src="~/Public/images/album/cadastro/greyson.jpg" alt="Capa do Álbum" id="capaAlbum" /></a><br />
+                    <div class="info">
+                        <input type="text" placeholder="Título do Álbum" />
+                        <input type="text" placeholder="Artista" />
+                        <input type="text" placeholder="Ano de Gravação" />
+                        <input type="text" placeholder="Gravadora" />
+                        <input type="number" min="0" max="30" class="nrFaixasAlbum" placeholder="Número de Faixas" />
+                    </div>
+                </div>
+                <button type="button" class="navbar-toggle sidebar-toggle" data-toggle="collapse" data-target=".sidebar-ex1-collapse">
+                    <span class="sr-only">Sidebar</span>
+                    <span class="glyphicon glyphicon-check"></span>
+                </button>
+                <div class="btns">
+                    <input type="submit" value="Adicionar Álbum" class="btn btn-primary" />
+                    <input type="submit" value="Cancelar" class="btn btn-danger" />
                 </div>
             </div>
-            <button type="button" class="navbar-toggle sidebar-toggle" data-toggle="collapse" data-target=".sidebar-ex1-collapse">
-                <span class="sr-only">Sidebar</span>
-                <span class="glyphicon glyphicon-check"></span>
-            </button>
-            <div class="btns">
-                <input type="submit" value="Adicionar Álbum" class="btn btn-primary" />
-                <input type="submit" value="Cancelar" class="btn btn-danger" />
-            </div>
         </div>
-    </div>
 }
 
 

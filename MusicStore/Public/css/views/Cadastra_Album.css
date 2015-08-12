@@ -2,21 +2,32 @@
     background-color: rgb(52, 61, 76);
     overflow: hidden;
 }
-html, body{
-    width:800px;
-    height:200px;
+html,body{
+    height:1000px;
 }
-
 .formCad {
+    position:absolute;
     padding: 17px;
-    margin: 0px 0 0 115px;
+    margin: 0 0 0 115px;
     width: 1170px;
     height: 600px;
 }
+
 .album {
-    margin: 0px 0 0 428px;
+    margin: 0px 0 0 498px;
     width: 300px;
     height: 475px;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    width: auto;
 }
 
 img {
@@ -26,17 +37,20 @@ img {
 }
 
 ul.col-sm-3 {
-    padding:10px;
-    margin:-50px 0 0  0;
-    width:50px;
-    height:1024px;
-    background-color:lightgrey;
+    padding: 10px;
+    margin: 0 0 0 0;
+    width: 50px;
+    height: 1024px;
+    background-color: lightgrey;
 }
-
 ul.col-sm-3 li {
-     margin:0 0 0 -10px;
+        margin: 0 0 0 -10px;
 }
-
+#sideBar {
+    margin:-50px 0 0 0;
+    width:50px;
+    height:1000px;
+}
 .musicas {
     position: relative;
     margin: 10px 0 0 35px;
@@ -57,25 +71,29 @@ ul.col-sm-3 li {
     width: 200px;
 }
 
-.info input {
-    position: relative;
-    margin: 9px 0 0 -5px;
-    width: 190px;
-    border:none;
-    border-radius: 2px;
-}
-#sideBar{}
+    .info input {
+        display: block;
+        margin: 12px 0 0 -5px;
+        width: 190px;
+        border: none;
+        border-radius: 2px;
+    }
+
+
+
 .btns {
-    margin: -20px 0 0 470px;
+    margin: -20px 0 0 540px;
 }
 
 .salvarFaixa {
     margin-left: 30px;
     border-radius: 18%;
 }
-#navBar{
-    display:none;
+
+#navBar {
+    display: none;
 }
+
 .infoFaixa {
     position: relative;
     margin: 70px 0 0px 0px;

@@ -210,6 +210,7 @@
     <Content Include="Public\js\app\bootstrap.min.js" />
     <Content Include="Public\js\app\jquery-1.9.1.js" />
     <Content Include="Public\js\app\jquery-1.9.1.min.js" />
+    <Content Include="Public\js\views\cadastrarAlbum.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -275,7 +276,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Public\js\views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
