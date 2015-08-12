@@ -1,0 +1,84 @@
+﻿body {
+    background-color: rgb(52, 61, 76);
+    overflow: hidden;
+}
+html, body{
+    width:800px;
+    height:200px;
+}
+
+.formCad {
+    padding: 17px;
+    margin: 0px 0 0 115px;
+    width: 1170px;
+    height: 600px;
+}
+.album {
+    margin: 0px 0 0 428px;
+    width: 300px;
+    height: 475px;
+}
+
+img {
+    margin-left: 25px;
+    height: 250px;
+    width: 250px;
+}
+
+ul.col-sm-3 {
+    padding:10px;
+    margin:-50px 0 0  0;
+    width:50px;
+    height:1024px;
+    background-color:lightgrey;
+}
+
+ul.col-sm-3 li {
+     margin:0 0 0 -10px;
+}
+
+.musicas {
+    position: relative;
+    margin: 10px 0 0 35px;
+    padding: 30px;
+    height: 450px;
+    width: 1060px;
+    border: 2px solid;
+}
+
+.genero {
+    /*margin:0 -440px 0 450px;*/
+}
+
+.info {
+    position: absolute;
+    padding: 10px 10px 0 0;
+    margin: 0px 0 0 60px;
+    width: 200px;
+}
+
+.info input {
+    position: relative;
+    margin: 9px 0 0 -5px;
+    width: 190px;
+    border:none;
+    border-radius: 2px;
+}
+#sideBar{}
+.btns {
+    margin: -20px 0 0 470px;
+}
+
+.salvarFaixa {
+    margin-left: 30px;
+    border-radius: 18%;
+}
+#navBar{
+    display:none;
+}
+.infoFaixa {
+    position: relative;
+    margin: 70px 0 0px 0px;
+    padding: 10px;
+    width: 200px;
+}

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+}
+
+@section Styles{
+    <link href="@Url.Content("~/Public/css/views/Profile.css")" rel="stylesheet" type="text/css" />
+}
+
+<h2>Profile</h2>
+
+@using (Html.BeginForm())
+{
+        <div class="container">
+            <img src="~/Public/images/john john.jpg" id="imgPerfil" />
+            <p>Escolha uma imagem de perfil:</p>
+
+            <input type="file" name="datafile" size="40" class="uploadImg" />
+            <div class="admin">
+                <a href="~/Home/Cadastra_Album"><span class="btn btn-primary">Cadastrar Albúm</span></a>
+                <a href="~/Home/Pesquisa_Album"><span class="btn btn-primary">Pesquisar Albúm</span> </a>
+            </div>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="nome" />
+                <br />
+
+                <label for="email">Email:</label>
+                <input type="email" placeholder="email" />
+                <br />
+
+                <label for="Telefone">Telefone:</label>
+                <input type="tel" placeholder="telefone" />
+                <br />
+            </div>
+            <hr />
+            <button type="submit" class="btn-success">Salvar</button>
+            <button type="submit" class="btn-danger">Cancelar</button>
+        </div>
+}

@@ -1,0 +1,33 @@
+﻿body {
+    background-color:orange;
+}
+input{
+    margin-left:20px;
+    margin-right:10px;
+    margin-top:100px;
+}
+#imgPerfil{
+    margin-top:10px;
+    height:190px;
+
+}
+.container,fieldset{
+    border: solid 3px black;
+    width: 1200px;
+}
+.uploadImg{
+    margin:10px 0 0 0;
+}
+button[type="submit"]{
+    width:100px;
+    margin-left:400px;
+    margin-right: -360px;
+    margin-bottom: 10px;
+}
+div input{
+    margin-top: 13px;
+}
+.admin{
+    position:absolute;
+    margin:-230px -797px 0 830px;
+}

@@ -1,0 +1,39 @@
+﻿body {
+    background-color:lightskyblue;
+}
+#music_heart{
+    margin:-13px 0 40px 0px;
+    width: 100px;
+    height: 100px;
+}
+ul li{
+    margin-top:40px;
+}
+.navbar-default{
+    margin-top:0px;
+    height: 100px;
+}
+#topo{
+    position: absolute;
+    margin-top:-38px;
+    margin-left:1187px;
+}
+#topo li:hover{
+    font-size: 18px;
+	background-color: rgba(52, 169, 246, 0.74);
+}
+#navegacao li:hover{
+	font-size: 18px;
+	background-color: #eeeeee;
+
+}
+.navbar-brand{
+    height:20px;
+}
+.form input{
+    border-radius: 4px;
+}
+.dropdown-menu{
+    border-radius:5px 5px 5px 5px;
+    margin: 0px 0 0 -135px;
+}
