@@ -28,5 +28,10 @@ namespace MusicStore.Controllers
         {
             return View();
         }
+
+        public ActionResult ErrorPage()
+        {
+            return View();
+        }
     }
 }

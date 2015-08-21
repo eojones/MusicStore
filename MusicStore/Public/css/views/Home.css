@@ -37,3 +37,13 @@ ul li{
     border-radius:5px 5px 5px 5px;
     margin: 0px 0 0 -135px;
 }
+.carousel{
+   margin: 81px 0 0 167px;
+   width:1041px;
+}
+.carousel-indicators {
+    bottom: -8px;
+}
+.h3, h3{
+    margin: 400px 0 0 0;
+}

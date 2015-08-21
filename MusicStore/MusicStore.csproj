@@ -120,7 +120,12 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Public\images\music_heart.ico" />
+    <Content Include="Public\images\slider\DefaultSlide_1.png" />
+    <Content Include="Public\images\slider\DefaultSlide_2.png" />
+    <Content Include="Public\images\slider\DefaultSlide_3.png" />
+    <Content Include="Public\images\slider\DefaultSlide_4.png" />
     <Content Include="Public\js\app\jquery-1.9.1.min.map" />
+    <Content Include="Views\error\ErrorPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -252,6 +257,7 @@
     <Content Include="Scripts\TableTools.js" />
     <Content Include="Scripts\TableTools_orig.js" />
     <Content Include="Scripts\ZeroClipboard.js" />
+    <Content Include="Views\error\ErroPagina.html" />
     <Content Include="Web.config" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
