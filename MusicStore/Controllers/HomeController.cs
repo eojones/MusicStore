@@ -17,6 +17,7 @@ namespace MusicStore.Controllers
         {
             return View();
         }
+
         [HttpGet]
         public ActionResult Pesquisa_Album()
         {

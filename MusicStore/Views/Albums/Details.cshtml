@@ -1,0 +1,50 @@
+﻿@model MusicStore.Models.Album
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Album</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TituloAlbum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TituloAlbum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeArtista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeArtista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroFaixas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroFaixas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataLancamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataLancamento)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

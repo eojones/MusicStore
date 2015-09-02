@@ -43,16 +43,16 @@ section.module.parallax {
   background-size: cover;
 }
 /* SECTION PARALLAX 1*/
-section.module.parallax-1 img{
+section.module.parallax img{
     height:370px;
 }
-section.module.parallax-1 input{
+section.module.parallax input{
     width:900px;
 }
-section.module.parallax-1 button{
+section.module.parallax button{
     width:280px;
 }
-section.module.parallax-1 .container *{
+section.module.parallax .container *{
     position:relative;
     padding-top:2px;
     margin: 13px 0 0 200px;

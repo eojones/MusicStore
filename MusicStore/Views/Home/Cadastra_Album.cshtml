@@ -12,38 +12,45 @@
 
 
 <ul class="nav nav-tabs col-sm-3" id="sideBar">
-    <li class="menu"><a class="glyphicon glyphicon-align-justify" href="#parallax-1"></a></li>
-    <li><a class="glyphicon glyphicon-plus" href="#parallax-1"></a></li>
-    <li><a class="glyphicon glyphicon-cd" href="#parallax-2"></a></li>
-    <li><a class="glyphicon glyphicon-music" href="#parallax-3"></a></li>
+    <li class="menu"><a id="menu" class="glyphicon glyphicon-align-justify" href="#parallax-1"></a></li>
+    <li><a id="adcAlbum" class="glyphicon glyphicon-plus" href="#parallax-1"></a></li>
+    <li><a id="adcFaixa" class="glyphicon glyphicon-cd" href="#parallax-2" onclick="getAlbum()"></a></li>
+    <li><a id="revEnviar" class="glyphicon glyphicon-music" href="#parallax-3"></a></li>
 </ul>
 
-<form method="post" >
+<form method="post" id="frmCadAlbum" action="#">
     <section id="parallax-1" class="module parallax parallax-1">
         <div class="container" align="center">
             <img src="~/Public/images/album/cadastro/greyson.jpg"/>
                 <input placeholder="Título do albúm" name="titulo" />
                 <input placeholder="Artista" name="artista" />
-                <input placeholder="Número de faixas" name="nrFaixa" />
+                <input type="number" max="30" min="2" placeholder="Número de faixas" name="nrFaixa" />
                 <input placeholder="Ano de lançameto" name="dtAnoLancamento" />
-                <button class="btn btn-primary" type="submit">Enviar</button>
+                <button class="btn btn-primary" type="submit" id="enviaAlbum" onclick="setAlbum()">Enviar</button>
                 <button class="btn btn-danger" type="reset">Cancelar</button>
         </div>
     </section>
 </form>
 
-<form method="post">
+<form method="post" id="frmCadFaixas" action="#">
     <section id="parallax-2" class="module parallax parallax-2">
-        <div class="container">
+        <div class="container" align="center">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-danger" type="reset">Cancelar</button>
 
         </div>
     </section>
 </form>
 
-<form method="post">
+<form method="post" id="frmCadGeral">
     <section id="parallax-3" class="module parallax parallax-3">
-        <div class="container">
-
+        <div class="container" align="center">
+            <input placeholder="Título do albúm" name="titulo" />
+            <input placeholder="Artista" name="artista" />
+            <input placeholder="Número de faixas" name="nrFaixa" />
+            <input placeholder="Ano de lançameto" name="dtAnoLancamento" />
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-danger" type="reset">Cancelar</button>
         </div>
     </section>
 </form>
