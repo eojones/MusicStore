@@ -45,6 +45,7 @@ section.module.parallax {
 /* SECTION PARALLAX 1*/
 section.module.parallax img{
     height:370px;
+    transition: all 0.2s ease;
 }
 section.module.parallax input{
     width:900px;

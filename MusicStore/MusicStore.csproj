@@ -290,17 +290,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AlbumsController.cs" />
     <Compile Include="Controllers\DataController.cs" />
+    <Compile Include="Controllers\FaixasController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\br.com.musicstore.bean\Album.cs" />
-    <Compile Include="Models\br.com.musicstore.bean\Faixa.cs" />
+    <Compile Include="Models\Album.cs" />
+    <Compile Include="Models\Faixa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\br.com.musicstore.dao\" />
+    <Folder Include="Views\Faixas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

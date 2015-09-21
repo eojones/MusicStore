@@ -16,7 +16,7 @@ namespace MusicStore.Models
         private Faixa[] _faixas;
 
         [Key]
-        public Int32 ID { get; set; }
+        public Int32 albumID { get; set; }
 
         [Required]
         public string TituloAlbum
